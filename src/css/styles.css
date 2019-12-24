@@ -1,0 +1,283 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  /* background-image: url(../img/backgroundImage.jpg); */
+}
+
+/* SJ1231219 - definition for container grid */
+.container {
+  display: grid;
+  grid-template-columns: [col1] 10% [col2] 10% [col3] 10% [col4] 10% [col5] 10% [col6] 10% [col7] 10% [col8] 10% [col9] 10% [col10] 10% [col11];
+  grid-template-rows:    [row1] 30% [row2] auto [row3] 10% [row4];
+}
+
+/* SJ1231219 - Defining grid for header */
+.container > .headerID {
+  grid-area: header;
+  grid-column: col1 / col11;
+  grid-row: row1 / row2;
+  margin-top: 0px;
+}
+
+/* SJ1231219 - Defining grid for main area */
+.container > .leftPanel {
+  grid-area: leftpanel;
+  grid-column: col1 / col3;
+  grid-row: row2 / row3;
+  margin-top: 65px;
+}
+.container > #main {
+  grid-area: mainarea;
+  grid-column: col3 / col11;
+  grid-row: row2 / row3;
+  margin-top: 65px;
+}
+
+/* SJ1231219 - Defining grid for footer */
+.container > .footerInfo {
+  grid-area: footer;
+  grid-column: col1 / col11;
+  grid-row: row3 / row4;
+}
+
+/* SJ1231219 - Defining grid for general area to display table and career history table */
+.container > #generalID, .container > #detail  {
+  grid-area: allColumns;
+  grid-column: col1 / col11;
+  grid-row: row2 / row3;
+  margin-top: 65px;
+}
+
+.headerID {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: chocolate;
+}
+
+.headerID > .mainMenu {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.headerID > nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.headerID > nav a:hover {
+  text-shadow: 0px 1px 5px rgba(243, 145, 16, 0.959);
+  color: white;
+}
+
+.headerID > nav > div[class="links"] > a:last-child {
+  margin-right: 30px;
+}
+
+.headerID > nav > div {
+  display: inline-block;
+}
+
+.headerID > nav > div[class="home"] {
+  width: 10%;
+}
+
+.headerID > nav > div[class="home"] > a {
+  margin-left: 25px;
+}
+
+.headerID > nav > div[class="links"] {
+  width: 90%;
+  margin-left: 0px;
+  text-align: right;
+}
+
+/* SJ1231219 - Style for left panel */
+.leftPanel > .photo {
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+/* SJ1231219 - This is to make the letter below the image smaller and color it blue */
+.leftPanel > .photo figcaption {
+  font-size: smaller;
+  color: blue;
+}
+
+.contactInfo {
+  margin-top: 75px;
+  margin-left: 25px;
+}
+
+/* SJ1231219 - contactInfo class contains linkedin link, e-mail link, and phone */
+.contactInfo img {
+  vertical-align: middle;
+}
+
+.contactInfo a, .contactInfo span, .contactInfo h3 {
+  color: rgb(155, 157, 170);
+  text-decoration-line: none;
+}
+
+.contactInfo a:hover {
+  color: red;
+}
+
+.nameHolder h3 {
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+.contactInfo > .linkedinHolder, .contactInfo > .githubHolder, .contactInfo > .EmailHolder, .contactInfo > .mobileHolder {
+  margin: 5px 0px;
+}
+
+.container > #main {
+  margin-right: 25px;
+  padding: 0px 15px;
+  white-space: normal;
+  text-align: justify;
+}
+
+/* SJ1231219 - Retrieved from general.html */
+.tableStyle {
+  text-align: center;
+}
+
+.tableStyle .linkID:hover {
+  background-color: lightgray;
+}
+
+.rowId:nth-child(even) {
+  background-color: rgba(204, 188, 188, 0.863);
+}
+
+.tableClass {
+  margin: 15px 25px;
+}
+
+/* .projectClass */
+
+/* SJ1231219 - CSS style for detail.html */
+.detBody {
+  padding-top: 0px;
+}
+
+.container > #detail {
+  margin: 0px 25px;
+  white-space: normal;
+  text-align: justify;
+}
+
+.container > #detail ol {
+  margin: 0px;
+  list-style-type: upper-roman;
+}
+
+.container > #detail img:hover {
+  background-color: #e6dcdc;
+}
+
+/* SJ1231219 - Style for footer */
+.footerInfo {
+  border-top: 1px solid grey;
+}
+
+.footerInfo .lowerFooter {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-left: 18px;
+  margin-right: 25px;
+  font-size: small;
+  color: black;
+}
+
+.footerInfo span {
+  color: rgb(240, 16, 16);
+}
+
+/* SJ1231219 - CSS style for contact.html */
+#contactForm {
+  margin: 0px 25px;
+  white-space: normal;
+}
+
+form {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 40px;
+  color: #1815b3fb;
+}
+
+#contactForm h2 {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+#contactForm fieldset {
+  border: 0;
+  padding: 0;
+  margin: 10px 0px;
+}
+
+#contactForm label, #contactForm div label {
+  display: inline-block;
+  width: 190px;
+  padding-right: 20px;
+}
+
+#contactForm div {
+  display: inline-block;
+  width: 500px;
+  padding-right: 20px;
+}
+
+input[name="name"], input[name="surname"], input[type="email"], input[type="tel"], 
+textarea[name="about"], select[name="Title"] {
+  display: inline-block;
+  width: 417px;
+  padding: 0.5em;
+  font-size: 16px;
+  border: 1px solid #ddd;;
+  color: gray;
+  outline-color: #1abc9c;
+}
+
+textarea {
+  vertical-align: middle;
+}
+
+#contactForm label[for="aboutid"] {
+  vertical-align: top;
+}
+
+input[type="submit"] {
+  display: block;
+  position: relative;
+  left: 525px;
+  padding: 15px 35px 15px 35px;
+  color: white;
+  background-color: #98a8a8;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #16a085;
+  border-radius: 14px;
+}
+
+input[type="submit"]:hover {
+  background-color: #ee1b96;
+}
+
+input[type="checkbox"]:checked {
+  background-color: green;
+}
