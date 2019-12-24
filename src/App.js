@@ -1,3 +1,4 @@
+import { Grid } from '@material-ui/core';
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -6,6 +7,9 @@ import './App.css';
 class App extends Component {
   render()  {
     return (
+      <Grid container direction="row" alignItems="baseline">
+        {/* Things to do here: add pageHeader component in src component folder.
+        Call pageHeader from here */}
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -22,6 +26,7 @@ class App extends Component {
           </a>
         </header>
       </div>
+      </Grid>
     );
   }
 
