@@ -1,5 +1,6 @@
 import { Grid } from '@material-ui/core';
-import { Avatar } from '@material-ui/core';
+// import { Avatar } from '@material-ui/core';
+import Avatar from '@material-ui/core/Avatar';
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -10,7 +11,12 @@ class App extends Component {
     return (
       <Grid container direction="row" alignItems="baseline">
         <Grid item={true} xs={5}>
-          <p>test</p>
+          {/* <Avatar alt="Suilarso" src="home/suilarso/SJS_Pribadi/sj_web_cv_react/src/res/img/Suilarso.jpg" /> */}
+          <Avatar alt="Suilarso" src="/res/img/Suilarso.jpg" />
+        </Grid>
+
+        <Grid item={true} xs={7}>
+          <p>Para</p>
         </Grid>
         {/* Things to do here: add pageHeader component in src component folder.
         Call pageHeader from here */}
