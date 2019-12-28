@@ -13,6 +13,7 @@ class App extends Component {
         <Grid item={true} xs={5}>
           {/* <Avatar alt="Suilarso" src="home/suilarso/SJS_Pribadi/sj_web_cv_react/src/res/img/Suilarso.jpg" /> */}
           <Avatar alt="Suilarso" src="/res/img/Suilarso.jpg" />
+          {/* <Avatar alt="Suilarso" src="./res/img/Duru.png" /> */}
         </Grid>
 
         <Grid item={true} xs={7}>
