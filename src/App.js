@@ -10,13 +10,15 @@ class App extends Component {
   render()  {
     return (
       <Grid container direction="row" alignItems="baseline">
-        <Grid item={true} xs={5}>
+        <Grid item={true} xs={6}>
           {/* <Avatar alt="Suilarso" src="home/suilarso/SJS_Pribadi/sj_web_cv_react/src/res/img/Suilarso.jpg" /> */}
-          <Avatar alt="Suilarso" src="/res/img/Suilarso.jpg" />
-          {/* <Avatar alt="Suilarso" src="./res/img/Duru.png" /> */}
+          <figure  >
+            <img alt="Suilarso" src="/res/img/Suilarso.jpg" width={125} height={150} />
+          </figure>
+          {/* <Avatar alt="Suilarso" src="/res/img/Suilarso.jpg" /> */}
         </Grid>
 
-        <Grid item={true} xs={7}>
+        <Grid item={true} xs={6}>
           <p>Para</p>
         </Grid>
         {/* Things to do here: add pageHeader component in src component folder.
