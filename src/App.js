@@ -4,7 +4,7 @@ import Avatar from '@material-ui/core/Avatar';
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import introductionMessage from './components/IntroductionMessage';
+import IntroductionMessage from './components/IntroductionMessage';
 
 // function App() {
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <Grid container direction="row" alignItems="baseline">
         <Grid item={true} xs={6}>
-          <introductionMessage />
+          <IntroductionMessage />
           {/* <Avatar alt="Suilarso" src="home/suilarso/SJS_Pribadi/sj_web_cv_react/src/res/img/Suilarso.jpg" /> */}
           {/* <figure  >
             <img alt="Suilarso" src="/res/img/Suilarso.jpg" width={125} height={150} />
@@ -42,9 +42,8 @@ class App extends Component {
         </header>
       </div> */}
       </Grid>
-    );
+    ); 
   }
-
 }
 
 export default App;

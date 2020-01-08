@@ -1,6 +1,6 @@
 import React from 'react';
 
-const introductionMessage = () => {
+const IntroductionMessage = () => {
   return (
     <p>Test</p>
   // <figure >
@@ -11,4 +11,4 @@ const introductionMessage = () => {
 
 
 
-export default introductionMessage;
+export default IntroductionMessage;
