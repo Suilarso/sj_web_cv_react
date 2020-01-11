@@ -1,6 +1,3 @@
-// import { Grid } from '@material-ui/core';
-// import { Avatar } from '@material-ui/core';
-// import Avatar from '@material-ui/core/Avatar';
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
