@@ -102,6 +102,10 @@ body {
   margin-top: 25px;
   margin-left: 5px;
 }
+.reactPhoto {
+  margin-top: 5px;
+  margin-left: 5px;
+}
 
 /* SJ1231219 - This is to make the letter below the image smaller and color it blue */
 .leftPanel > .photo figcaption {
