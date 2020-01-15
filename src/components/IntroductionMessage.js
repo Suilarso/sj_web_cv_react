@@ -7,18 +7,25 @@ const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
     '& > *': {
-      margin: theme.spacing(1),
+      margin: theme.spacing(5),
     },
     size: {width: 125, height: 150}
+  },
+  small: {
+    width: theme.spacing(3),
+    height: theme.spacing(3),
+  },
+  large: {
+    width: theme.spacing(15),
+    height: theme.spacing(15),
   },
 }));
 
 const IntroductionMessage = () => {
   const classes = useStyles();
   return (
-    // <div className={classes.root}>
-    <div >
-      <Avatar alt="Suilarso" src={Suilarso} />
+    <div className={classes.root}>
+      <Avatar alt="Suilarso" src={Suilarso} className={classes.large} />
     </div>
   );
 }
