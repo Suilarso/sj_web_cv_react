@@ -6,11 +6,11 @@ const SJMainContainer = () => {
 
   return(
     <Grid container direction="row" alignItems="baseline">
-      <Grid item={true} xs={2}>
+      <Grid item={true} xs={3}>
         <IntroductionMessage />
       </Grid>
 
-      <Grid item={true} xs={10}>
+      <Grid item={true} xs={9}>
         <p>Para</p>
       </Grid>
   </Grid>
