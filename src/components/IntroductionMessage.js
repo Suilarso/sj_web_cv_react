@@ -22,14 +22,15 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const IntroductionMessage = () => {
+  
   const classes = useStyles();
+  
   return (
     <div className={classes.root}>
       <Avatar alt="Suilarso" src={Suilarso} className={classes.large} />
     </div>
   );
 }
-
 
 
 export default IntroductionMessage;
