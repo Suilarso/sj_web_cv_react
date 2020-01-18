@@ -8,10 +8,14 @@ import phoneIcon from "../res/img/phone-icon.png";
 const useStyles = makeStyles(theme => ({
   root: {
     // display: 'flex',
-    '& > *': {
-      margin: theme.spacing(3),
-    },
+    // '& > *': {
+    //   margin: theme.spacing(5),
+    // },
+    marginTop: theme.spacing(5),
     // size: {width: 125, height: 150}
+  },
+  infoContainer: {
+    margin: theme.spacing(1),
   },
   
 }));
@@ -22,25 +26,25 @@ const PersonalInfo = () => {
 
   return (
     <div className={classes.root}>
-    <div>
-      <img src={linkedinIcon} alt="linkedin" title="linkedin"></img>
-      <a href="https://www.linkedin.com/in/suilarso-japit-04b343140" target="_blank">LinkedIn URL</a>
-    </div>
+      <div className={classes.infoContainer}>
+        <img src={linkedinIcon} alt="linkedin" title="linkedin"></img>
+        <a href="https://www.linkedin.com/in/suilarso-japit-04b343140" target="_blank">LinkedIn URL</a>
+      </div>
 
-    <div>
-      <img src={githubIcon} alt="GitHub" title="GitHub"></img>
-      <a href="https://github.com/Suilarso" target="_blank">GitHub URL</a>
-    </div>
+      <div className={classes.infoContainer}>
+        <img src={githubIcon} alt="GitHub" title="GitHub"></img>
+        <a href="https://github.com/Suilarso" target="_blank">GitHub URL</a>
+      </div>
 
-    <div>
-      <img src={emailIcon} alt="EMail" title="Email"></img>
-      <a href="mailto:suilarso@gmail.com">suilarso@gmail.com</a>
-    </div>
+      <div className={classes.infoContainer}>
+        <img src={emailIcon} alt="EMail" title="Email"></img>
+        <a href="mailto:suilarso@gmail.com">suilarso@gmail.com</a>
+      </div>
       
-    <div>
-      <img src={phoneIcon} alt="Mobile" title="Mobile"></img>
-      <span>(431) 336 4539</span>
-    </div>
+      <div className={classes.infoContainer}>
+        <img src={phoneIcon} alt="Mobile" title="Mobile"></img>
+        <span>(431) 336 4539</span>
+      </div>
     </div>
   );
 
