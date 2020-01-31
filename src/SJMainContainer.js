@@ -20,7 +20,7 @@ const SJMainContainer = () => {
       </Grid>
 
       <Grid container>
-        <Grid item={true} xs={12}>
+        <Grid item={true} xs={10}>
           <BriefSummary />
         </Grid>
       </Grid>
