@@ -7,7 +7,9 @@ const useStyles = makeStyles(theme => ({
     // marginTop: theme.spacing(5),
   },
   summaryContainer: {
-    margin: theme.spacing(1),
+    // margin: theme.spacing(1),
+    marginTop: theme.spacing(5),
+    marginLeft: theme.spacing(5),
   },
   
 }));
