@@ -8,16 +8,22 @@ import phoneIcon from "../res/img/phone-icon.png";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    // display: 'flex',
-    // '& > *': {
-    //   margin: theme.spacing(5),
-    // },
     marginTop: theme.spacing(5),
-    // paddingTop: theme.spacing(5),
-    // size: {width: 125, height: 150}
   },
   infoContainer: {
     margin: theme.spacing(1),
+    '& a': {
+      color: 'green',
+      marginLeft: theme.spacing(1),
+      fontSize: 18,
+      // margin: theme.spacing(3),
+    },
+    '& span': {
+      color: 'green',
+      marginLeft: theme.spacing(1),
+      fontSize: 18,
+      // margin: theme.spacing(3),
+    }
   },
   
 }));
