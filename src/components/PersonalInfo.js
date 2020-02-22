@@ -12,17 +12,19 @@ const useStyles = makeStyles(theme => ({
   },
   infoContainer: {
     margin: theme.spacing(1),
+    '& img': {
+      verticalAlign: 'middle',
+    },
     '& a': {
       color: 'green',
       marginLeft: theme.spacing(1),
       fontSize: 18,
-      // margin: theme.spacing(3),
+      textDecorationLine: 'none',
     },
     '& span': {
       color: 'green',
       marginLeft: theme.spacing(1),
       fontSize: 18,
-      // margin: theme.spacing(3),
     }
   },
   
