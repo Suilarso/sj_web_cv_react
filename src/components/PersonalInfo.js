@@ -26,8 +26,7 @@ const useStyles = makeStyles(theme => ({
       marginLeft: theme.spacing(1),
       fontSize: 18,
     }
-  },
-  
+  }
 }));
 
 const PersonalInfo = () => {
