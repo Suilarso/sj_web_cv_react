@@ -10,11 +10,11 @@ const SJMainContainer = () => {
     // <Grid container direction="row" alignItems="baseline">
     <Grid container>
       <Grid container direction="row" >
-        <Grid item={true} xs={3}>
+        <Grid item={true} xs={12} sm={2} md={3}>
           <IntroductionMessage />
         </Grid>
 
-        <Grid item={true} xs={9}>
+        <Grid item={true} xs={12} sm={10} md={9}>
           <PersonalInfo />
         </Grid>
       </Grid>
