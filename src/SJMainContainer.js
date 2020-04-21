@@ -8,21 +8,16 @@ const SJMainContainer = () => {
 
   return(
     // <Grid container direction="row" alignItems="baseline">
-    <Grid container>
-      <Grid container direction="row" >
-        <Grid item={true} xs={12} sm={2} md={3}>
+    <Grid container direction="row">
+      <Grid item={true} xs={12} sm={2} md={3}>
+        <Grid container direction="column">
           <IntroductionMessage />
-        </Grid>
-
-        <Grid item={true} xs={12} sm={10} md={9}>
           <PersonalInfo />
         </Grid>
       </Grid>
 
-      <Grid container>
-        <Grid item={true} xs={10}>
-          <BriefSummary />
-        </Grid>
+      <Grid item={true} xs={12} sm={10} md={9}>
+        <BriefSummary />
       </Grid>
     </Grid>
   );
