@@ -8,10 +8,11 @@ import phoneIcon from "../res/img/phone-icon.png";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    marginTop: theme.spacing(5),
+    marginTop: theme.spacing(1),
   },
   infoContainer: {
-    margin: theme.spacing(1),
+    marginTop: theme.spacing(1),
+    marginLeft: theme.spacing(5),
     '& img': {
       verticalAlign: 'middle',
     },
